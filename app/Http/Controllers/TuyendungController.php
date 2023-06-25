@@ -132,16 +132,4 @@ class TuyendungController extends Controller
         return redirect('/ung-tuyen')->with('status', 'Phản hồi của bạn đã được gửi. Chúng tôi sẽ sớm phản hồi lại!');
     }
 
-
-    public function getWeather()
-    {
-        $weather = new Weather();
-
-        $currentWeather = $weather->getCurrentWeatherByCityName('Ho Chi Minh');
-
-        $temperature = $currentWeather->temperature();
-        $description = $currentWeather->description();
-
-        return view('weather', compact('temperature', 'description'));
-    }
 }
