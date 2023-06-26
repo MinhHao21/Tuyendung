@@ -70,35 +70,8 @@ class TuyendungController extends Controller
         ]);
     }
 
-    // public function phanhoi(Request  $request)
-    // {
-    //     $hoten = $request->input('hoten');
-    //     $email = $request->input('email');
-    //     $diachi = $request->input('diachi');
-    //     $sodienthoai = $request->input('sodienthoai');
-    //     if ($request->hasFile('file')) {
-    //         $file = $request->file('file');
-    //         $path = $file->store('uploads');
-    //         // Lưu file vào thư mục 'uploads' và lấy đường dẫn lưu trữ
+    // ham sua
 
-    //         // Lưu thông tin về file vào CSDL
-    //         $fileModel = new sinhvien();
-    //         $fileModel->filecv = $file->getClientOriginalName();
-    //         $fileModel->save();
-    // }
-
-    //     $thongtinphanhoi = new sinhvien();
-    //     $thongtinphanhoi->hoten = $hoten;
-    //     $thongtinphanhoi->email = $email;
-    //     $thongtinphanhoi->diachi = $diachi;
-    //     $thongtinphanhoi->sodienthoai = $sodienthoai;
-    //     $thongtinphanhoi->trangthai = 'Chờ xét duyệt';
-    //     $thongtinphanhoi->save();
-
-
-
-    //     return redirect('/ung-tuyen')->with('status', 'Phản hồi của bạn đã được gửi. Chúng tôi sẽ sớm phản hồi lại!');
-    // }
 
     public function danhmuc()
     {
