@@ -14,6 +14,7 @@ use App\Http\Controllers\TuyendungController;
 |
 */
 Route::get('/ung-tuyen', [TuyendungController::class, 'ungtuyen'])->name('ungtuyen');
+Route::put('/ung-tuyen/{id}', [TuyendungController::class, 'update']);
 
 // api sua
 

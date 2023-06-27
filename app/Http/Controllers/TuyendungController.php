@@ -72,7 +72,21 @@ class TuyendungController extends Controller
     }
 
     // ham sua
+    public function update(Request $request, $id)
+    {
+        // Lấy thông tin trạng thái từ request
+        $trangthai = $request->input('trangthai');
 
+        // Tìm ứng viên theo ID
+        $ungtuyen = sinhvien::findOrFail($id);
+
+        // Cập nhật trạng thái
+        $ungtuyen->trangthai = $trangthai;
+        $ungtuyen->save();
+
+        // Trả về kết quả thành công
+        return response()->json(['message' => 'Trạng thái đã được cập nhật']);
+    }
 
     public function danhmuc()
     {
