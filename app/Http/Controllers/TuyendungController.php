@@ -64,10 +64,11 @@ class TuyendungController extends Controller
     public function ungtuyen()
     {
         $ungtuyen = sinhvien::all();
-        return view('ungtuyen', [
+        return $ungtuyen;
+        // return view('ungtuyen', [
 
-            'ungtuyen' => $ungtuyen,
-        ]);
+        //     'ungtuyen' => $ungtuyen,
+        // ]);
     }
 
     // ham sua
