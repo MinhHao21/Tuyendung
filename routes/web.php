@@ -70,6 +70,7 @@ Route::get('/', [TuyendungController::class, 'trangchu'])->name('trangchu');
 // Route::get('/tin-tuc/{slug}', [TuyendungController::class, 'tintuc'])->name('posts.tintuc');
 Route::get('/chi-tiet-tuyen-dung/{slug}', [TuyendungController::class, 'tuyendung'])->name('chitiettuyendung');
 Route::get('/ung-tuyen', [TuyendungController::class, 'ungtuyen'])->name('ungtuyen');
+Route::get('/ung-tuyen', [TuyendungController::class, 'ungtuyenview'])->name('ungtuyen');
 Route::post('/ung-tuyen', [TuyendungController::class, 'phanhoi'])->name('ungtuyen');
 Route::get('/danh-muc', [TuyendungController::class, 'danhmuc'])->name('posts.danhmuchacon');
 

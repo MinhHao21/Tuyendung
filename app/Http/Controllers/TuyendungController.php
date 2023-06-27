@@ -71,6 +71,16 @@ class TuyendungController extends Controller
         // ]);
     }
 
+    public function ungtuyenview()
+    {
+        $ungtuyen = sinhvien::all();
+        
+        return view('ungtuyen', [
+
+            'ungtuyen' => $ungtuyen,
+        ]);
+    }
+
     // ham sua
     public function update(Request $request, $id)
     {
