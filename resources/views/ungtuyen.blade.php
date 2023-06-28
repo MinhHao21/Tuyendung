@@ -44,7 +44,12 @@
 </style>
 
 
+
+
 <form action="" method="post" enctype="multipart/form-data">
+@if(session('status')) 
+    <p>{{ session('status') }}</p>
+@endif
     @csrf
     <label for="email">Email của bạn:</label>
     <input type="email" name="email" id="email" required><br><br>
